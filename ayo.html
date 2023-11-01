@@ -1,10 +1,76 @@
 <!doctype html>
 <html>
 <head>
+       <style>
+        body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+   
    <link rel="stylesheet" href="style.css">
 <title>Teacher info</title>
 </head>
 <body>
+   <div class="sidebar">
+  <a href="">Home</a>
+ 
+  <a href="">Summary</a>
+  <a href="">About</a>
+    <a class="active" href="https://enterusername32.github.io/ayo.html">Teacher CLICK HERE FOR MORE INFO!</a>
+</div>
+
+<div class="content">
 <center>
 <h1>You are being rickrolled. Do not click off.</h1>
 <h3></h3>
